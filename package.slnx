@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="package/package.csproj" />
+  <Project Path="src/Umbraco.BlockFieldVisibility/Umbraco.BlockFieldVisibility.csproj" />
+</Solution>

@@ -1,0 +1,40 @@
+# Build / IDE
+**/bin/
+**/obj/
+**/.vs/
+**/.idea/
+*.user
+*.suo
+*.sln.iml
+*.log
+*.binlog
+
+# Node (backoffice Client)
+**/node_modules/
+
+# NuGet output
+**/artifacts/
+*.nupkg
+*.snupkg
+
+# Umbraco site local data (test site)
+package/App_Data/
+package/umbraco/Data/
+package/umbraco/Logs/
+package/wwwroot/media/
+package/uSync/
+
+# Client build scratch
+**/test-out.js
+package/**/appsettings-schema*.json
+package/**/umbraco-package-schema.json
+
+# Secrets / local overrides
+.env
+.env.*
+**/appsettings.Local.json
+**/appsettings.*.local.json
+
+# OS
+Thumbs.db
+.DS_Store

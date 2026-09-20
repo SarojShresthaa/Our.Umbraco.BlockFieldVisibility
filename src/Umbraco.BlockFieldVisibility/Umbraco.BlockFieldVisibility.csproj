@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Umbraco.BlockFieldVisibility</RootNamespace>
+    <AssemblyName>Umbraco.BlockFieldVisibility</AssemblyName>
+    <StaticWebAssetBasePath>App_Plugins/Umbraco.BlockFieldVisibility</StaticWebAssetBasePath>
+    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+    <Description>Hide document and block properties in the Umbraco 17 backoffice (values unchanged). Content Field visibility dashboard, Block List data type settings, nested block lists, and hide-rule tags.</Description>
+    <PackageId>Our.Umbraco.BlockFieldVisibility</PackageId>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>1.0.1: NuGet readme and docs aligned with Field visibility dashboard, Our.Umbraco package ID, page + block storage, nested block dropdown. 1.0.0: Initial release.</PackageReleaseNotes>
+    <Authors>Our Umbraco</Authors>
+    <Company>Our Umbraco</Company>
+    <PackageTags>umbraco;umbraco17;blocklist;backoffice;field-visibility;cms</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://www.nuget.org/packages/Our.Umbraco.BlockFieldVisibility</PackageProjectUrl>
+    <IsPackable>true</IsPackable>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Api.Management" Version="17.6.2" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="17.6.2" />
+    <PackageReference Include="Umbraco.Cms.Web.Common" Version="17.6.2" />
+  </ItemGroup>
+
+  <Target Name="BuildBlockFieldVisibilityClient" BeforeTargets="Build" Condition="Exists('$(MSBuildProjectDirectory)\Client\package.json')">
+    <Exec Command="npm install" WorkingDirectory="$(MSBuildProjectDirectory)\Client" Condition="!Exists('$(MSBuildProjectDirectory)\Client\node_modules')" />
+    <Exec Command="npm run build" WorkingDirectory="$(MSBuildProjectDirectory)\Client" />
+  </Target>
+
+</Project>

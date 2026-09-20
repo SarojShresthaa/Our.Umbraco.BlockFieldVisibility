@@ -1,0 +1,85 @@
+{
+  "$schema": "../../../package/umbraco-package-schema.json",
+  "id": "Umbraco.BlockFieldVisibility",
+  "name": "Umbraco Block Field Visibility",
+  "version": "1.0.1",
+  "extensions": [
+    {
+      "type": "dashboard",
+      "alias": "Umbraco.BlockFieldVisibility.Dashboard.FieldVisibility",
+      "name": "Field Visibility Dashboard",
+      "element": "/App_Plugins/Umbraco.BlockFieldVisibility/content-field-visibility-dashboard.js",
+      "elementName": "umb-content-field-visibility-dashboard",
+      "weight": 19,
+      "meta": {
+        "label": "Field visibility",
+        "pathname": "field-visibility",
+        "icon": "icon-eye"
+      },
+      "conditions": [
+        {
+          "alias": "Umb.Condition.SectionAlias",
+          "match": "Umb.Section.Content"
+        }
+      ]
+    },
+    {
+      "type": "workspaceView",
+      "alias": "Umbraco.BlockFieldVisibility.WorkspaceView.FieldVisibility",
+      "name": "Block List Field Visibility Settings",
+      "element": "/App_Plugins/Umbraco.BlockFieldVisibility/block-list-field-visibility-workspace-view.js",
+      "elementName": "umb-block-list-field-visibility-workspace-view",
+      "weight": 950,
+      "meta": {
+        "label": "Field visibility",
+        "pathname": "field-visibility",
+        "icon": "icon-eye"
+      },
+      "conditions": [
+        {
+          "alias": "Umb.Condition.WorkspaceAlias",
+          "match": "Umb.Workspace.BlockListType"
+        }
+      ]
+    },
+    {
+      "type": "workspaceContext",
+      "alias": "Umbraco.BlockFieldVisibility.WorkspaceContext.Document",
+      "name": "Document Field Visibility Workspace Context",
+      "weight": 1000,
+      "api": "/App_Plugins/Umbraco.BlockFieldVisibility/document-field-visibility.workspace-context.js",
+      "conditions": [
+        {
+          "alias": "Umb.Condition.WorkspaceAlias",
+          "match": "Umb.Workspace.Document"
+        }
+      ]
+    },
+    {
+      "type": "workspaceContext",
+      "alias": "Umbraco.BlockFieldVisibility.WorkspaceContext.Block",
+      "name": "Block Field Visibility Workspace Context",
+      "weight": 1000,
+      "api": "/App_Plugins/Umbraco.BlockFieldVisibility/block-field-visibility.workspace-context.js",
+      "conditions": [
+        {
+          "alias": "Umb.Condition.WorkspaceAlias",
+          "match": "Umb.Workspace.Block"
+        }
+      ]
+    },
+    {
+      "type": "modal",
+      "alias": "Umbraco.BlockFieldVisibility.Modal",
+      "name": "Block Field Visibility Modal",
+      "element": "/App_Plugins/Umbraco.BlockFieldVisibility/block-field-visibility-modal.js",
+      "elementName": "umb-block-field-visibility-modal"
+    },
+    {
+      "type": "backofficeEntryPoint",
+      "alias": "Umbraco.BlockFieldVisibility.BackofficeEntryPoint",
+      "name": "Block Field Visibility Backoffice Entry Point",
+      "js": "/App_Plugins/Umbraco.BlockFieldVisibility/backoffice-entry-point.js"
+    }
+  ]
+}
