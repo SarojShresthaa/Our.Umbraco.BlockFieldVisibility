@@ -10,9 +10,8 @@
   "Tags": ["block list", "backoffice", "field visibility", "editor experience"],
   "AuthorDetails": {
     "Name": "Saroj Shrestha",
-    "Description": "Umbraco package author.",
+    "Description": "Open-source Umbraco packages.",
     "Url": "https://github.com/SarojShresthaa",
-    "ImageUrl": "https://github.com/SarojShresthaa.png",
-    "SyncContributorsFromRepository": true
+    "ImageUrl": "https://avatars.githubusercontent.com/u/145342744?v=4"
   }
 }

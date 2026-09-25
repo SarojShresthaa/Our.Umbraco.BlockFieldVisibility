@@ -10,10 +10,11 @@
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
     <Description>Hide page and block editor fields in the Umbraco 17 backoffice—content stays in the database.</Description>
     <PackageId>Our.Umbraco.BlockFieldVisibility</PackageId>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>1.0.1: NuGet readme and docs aligned with Field visibility dashboard, Our.Umbraco package ID, page + block storage, nested block dropdown. 1.0.0: Initial release.</PackageReleaseNotes>
-    <Authors>Our Umbraco</Authors>
-    <Company>Our Umbraco</Company>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>1.0.3: Package icon and author metadata for Marketplace. 1.0.2: umbraco-marketplace tag and GitHub project URL. 1.0.1: Field visibility dashboard and Our.Umbraco package ID.</PackageReleaseNotes>
+    <Authors>Saroj Shrestha</Authors>
+    <Company>Saroj Shrestha</Company>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageTags>umbraco;umbraco-marketplace;umbraco17;blocklist;backoffice;field-visibility;cms</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -27,6 +28,7 @@
 
   <ItemGroup>
     <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>

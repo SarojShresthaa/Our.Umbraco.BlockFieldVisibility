@@ -2,7 +2,7 @@
   "$schema": "../../../package/umbraco-package-schema.json",
   "id": "Umbraco.BlockFieldVisibility",
   "name": "Umbraco Block Field Visibility",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "extensions": [
     {
       "type": "dashboard",
