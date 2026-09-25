@@ -7,5 +7,12 @@
   "PackageType": "Package",
   "DocumentationUrl": "https://github.com/SarojShresthaa/Our.Umbraco.BlockFieldVisibility/blob/main/src/Umbraco.BlockFieldVisibility/README.md",
   "IssueTrackerUrl": "https://github.com/SarojShresthaa/Our.Umbraco.BlockFieldVisibility/issues",
-  "Tags": ["block list", "backoffice", "field visibility", "editor experience"]
+  "Tags": ["block list", "backoffice", "field visibility", "editor experience"],
+  "AuthorDetails": {
+    "Name": "Saroj Shrestha",
+    "Description": "Umbraco package author.",
+    "Url": "https://github.com/SarojShresthaa",
+    "ImageUrl": "https://github.com/SarojShresthaa.png",
+    "SyncContributorsFromRepository": true
+  }
 }
