@@ -8,16 +8,18 @@
     <AssemblyName>Umbraco.BlockFieldVisibility</AssemblyName>
     <StaticWebAssetBasePath>App_Plugins/Umbraco.BlockFieldVisibility</StaticWebAssetBasePath>
     <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
-    <Description>Hide document and block properties in the Umbraco 17 backoffice (values unchanged). Content Field visibility dashboard, Block List data type settings, nested block lists, and hide-rule tags.</Description>
+    <Description>Hide page and block editor fields in the Umbraco 17 backoffice—content stays in the database.</Description>
     <PackageId>Our.Umbraco.BlockFieldVisibility</PackageId>
     <Version>1.0.1</Version>
     <PackageReleaseNotes>1.0.1: NuGet readme and docs aligned with Field visibility dashboard, Our.Umbraco package ID, page + block storage, nested block dropdown. 1.0.0: Initial release.</PackageReleaseNotes>
     <Authors>Our Umbraco</Authors>
     <Company>Our Umbraco</Company>
-    <PackageTags>umbraco;umbraco17;blocklist;backoffice;field-visibility;cms</PackageTags>
+    <PackageTags>umbraco;umbraco-marketplace;umbraco17;blocklist;backoffice;field-visibility;cms</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://www.nuget.org/packages/Our.Umbraco.BlockFieldVisibility</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/SarojShresthaa/Our.Umbraco.BlockFieldVisibility</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SarojShresthaa/Our.Umbraco.BlockFieldVisibility</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <IsPackable>true</IsPackable>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>

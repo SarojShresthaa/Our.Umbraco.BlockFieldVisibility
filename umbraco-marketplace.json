@@ -1,0 +1,11 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "Title": "Block Field Visibility",
+  "Description": "Hide page and block editor fields in the backoffice—content stays in the database.",
+  "Category": "Editor Tools",
+  "LicenseTypes": ["Free"],
+  "PackageType": "Package",
+  "DocumentationUrl": "https://github.com/SarojShresthaa/Our.Umbraco.BlockFieldVisibility/blob/main/src/Umbraco.BlockFieldVisibility/README.md",
+  "IssueTrackerUrl": "https://github.com/SarojShresthaa/Our.Umbraco.BlockFieldVisibility/issues",
+  "Tags": ["block list", "backoffice", "field visibility", "editor experience"]
+}
